@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dangky.css">
+    <script src="dangky.js"></script>
+</head>
+
+<body>
+    <form id="form1">
+        <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+        <p>
+            <lable>Mã Sinh Viên</lable><br>
+            <input id="masv" type="text" class="txt">
+        </p>
+        <p>
+            <label>Họ Và Tên:</label><br>
+            <input id="hoten" type="text" class="txt">
+        </p>
+        <p>
+            <label>Email</label>
+            <input id="email" type="email" class="txt">
+        </p>
+        <p>
+            <fieldset id="fs1">
+                <legend>Giới Tính</legend>
+                <input type="radio" name="phai" value="Nam">
+                <lable>Nam</lable>
+                <input type="radio" name="phai" value="Nữ">
+                <lable>Nữ</lable>
+            </fieldset>
+        </p>
+        <p>
+            <fieldset id="fs2">
+                <legend>Sở Thích</legend>
+                <input type="checkbox" name="st"><label>Đọc Sách</label>
+                <input type="checkbox" name="st"><label>Du lịch</label>
+                <input type="checkbox" name="st"><label>Ẩm Thực</label>
+                <input type="checkbox" name="st"><label>Âm Nhạc</label>
+                <input type="checkbox" name="st"><label>Khác</label>
+            </fieldset>
+        </p>
+        <p>
+            <label>Quốc Tịch</label>
+            <Select id="quoctich" class="txt">
+                <option value="0">Chọn quốc tịch</option>
+                <option value="1">Việt Nam</option>
+                <option value="2">Hàn Quốc</option>
+                <option value="3">Mỹ</option>
+                <option value="4">Đông lào</option>
+            </Select>
+        </p>
+        <p>
+            <label>Ghi Chú</label><br>
+            <textarea id="ghichu" cols="54" rows="5" class="txt"> </textarea>
+        </p>
+        <div id="baoloi"></div>
+        <button type="button" id="nut" onclick="thongbao()">Đăng Kí</button>
+        <button type="reset" id="nut">Reset</button>
+    </form>
+</body>
+
+</html>
